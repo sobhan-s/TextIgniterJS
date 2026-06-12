@@ -161,8 +161,10 @@ const features = [
   'image',
 
   // Structure
-  'insertTable',
-  'insertLayout',
+  'insert_table',
+  'insert_layout',
+  'insert_math',
+  'emoji',
 
   // Actions
   'getHtmlContent',
