@@ -100,6 +100,7 @@ Listen to the custom `content-change` event to capture changes in real-time:
 ### Custom Element Attributes
 
 - **`config`** (string): JSON string containing configuration options for the editor.
+- **`value`** (string): Initial HTML value to load into the editor on creation. Can also be set/updated programmatically to synchronize editor content.
 - **`id`** (string): Unique identifier for the editor instance.
 
 ### Configuration Options

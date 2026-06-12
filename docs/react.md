@@ -169,6 +169,10 @@ const features = [
   'insert_math',
   'emoji',
 
+  // Integrations & Accessibility
+  'speechToText',
+  'textToSpeech',
+
   // Actions
   'getHtmlContent',
   'loadHtmlContent',
