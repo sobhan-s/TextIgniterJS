@@ -8,7 +8,7 @@ We want to extend our heartfelt gratitude to the contributors who have made `@mi
 
 import React from 'react';
 
-export default function Contributors() {
+export function Contributors() {
 const contributorsData = {
 'lakin-mohapatra': {
 name: 'Lakin Mohapatra',
@@ -38,7 +38,6 @@ image_url: 'https://github.com/jagdish-mindfire.png',
 
 return (
 <div>
-<h1>Our Contributors</h1>
 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
 {Object.entries(contributorsData).map(([key, contributor]) => (
 <div key={key} style={{ display: 'flex', alignItems: 'center' }}>
@@ -60,3 +59,5 @@ GitHub Profile
 </div>
 );
 }
+
+<Contributors />
