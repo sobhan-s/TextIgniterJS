@@ -105,6 +105,8 @@ The `Textigniter` component accepts the following props:
 | Prop | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `config` | `EditorConfig` | Yes | Configuration options for the editor. |
+| `value` | `string` | No | Controlled value for parent-to-child content updates and synchronization. |
+| `initialValue` | `string` | No | Uncontrolled initial content to load when the component mounts. |
 | `onContentChange` | `(data: ContentChangeData) => void` | No | Callback triggered when the content changes. |
 
 ### Configuration Options (`EditorConfig`)
@@ -112,7 +114,8 @@ The `Textigniter` component accepts the following props:
 | Option | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
 | `showToolbar` | `boolean` | `true` | Show or hide the toolbar. |
-| `features` | `string[]` | `[]` | Array of features to enable. |
+| `features` | `string[]` | `[]` | Array of features to enable on the toolbar. |
+| `popupFeatures` | `string[]` | `[]` | Array of features to show in the text selection popup bubble menu (e.g. `['bold', 'italic', 'underline', 'hyperlink']`). |
 | `height` | `string` | `undefined` | Height of the editor (e.g., `'400px'`, `'50vh'`). |
 | `placeholder` | `string` | `undefined` | Placeholder text when editor is empty. |
 
